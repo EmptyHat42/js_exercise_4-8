@@ -206,9 +206,6 @@ function reverseArrayInPlace(orderedArray){ // Tar in en array via input
     for (i = 0; i < orderedArray.length / 2; i++){ // Vi loopar igenom vår array, men då vi ändrar på två värden per loop så halverar vi hur många gånger den loopar
                                                    // Gör vi inte detta så kommer vi bara gå runt ett helt varv och sluta där vi började
         keepValue = orderedArray[i]; // Vi sparar värdet på index i inuti keepValue
-        
-        // orderedArray.length - 1 - i har -1 i sig för att inxedvärden börjar på 0
-        // 
         orderedArray[i] = orderedArray[orderedArray.length - 1 - i] // Här händer mycket. Vi skriver över värdet på index i med värdet längst bak i array:n - i
                                                                     // orderedArray.length - 1 - i har -1 i sig för att inxedvärden börjar på 0
                                                                     // Vi kör - i för att värdena ska stämma överens och gå utifrån och in.
